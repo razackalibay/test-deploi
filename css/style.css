@@ -1,0 +1,167 @@
+/* -   Rouge : `#c80000`
+-   Gris foncé : `#666`
+-   Gris clair (bordures et catégorie): `#ccc`
+-   du noir pour les textes et fond blanc
+*/
+
+/* * Pour les variables CSS : */
+/*
+* déclaration de variables sur le pseudo element root, on déclare un variable qui s'appelle --bg-red
+* :root représente le document CSS
+*/
+:root {
+    --bg-red: #c80000;
+    --bg-dark-grey: #666;
+    --bg-light-grey: #ccc;
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.header {
+    color: #fff;
+    /* position: sticky;
+    top: 0; */
+}
+
+/*
+  * On se sert de la variable gràce au mot-clé : variable(nom de la variable)
+  */
+.header__title-container {
+    background-color: var(--bg-red);
+    padding: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__theme-container {
+    background-color: var(--bg-dark-grey);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header__subtitle {
+    margin-left: 10px;
+}
+
+.header__theme-title-franchise {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.footer {
+    background-color: var(--bg-dark-grey);
+    color: #fff;
+    padding: 15px ;
+    display: flex;
+    position:absolute;
+    bottom:0;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.fixed-sales {
+    position: fixed;
+    left: 0;
+    top: calc(50% - 125px / 2);
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    background-color: var(--bg-red);
+    color: #fff;
+    letter-spacing: -0.1rem;
+    padding: 10px 5px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.check-out {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mainform {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.validation  { 
+position:absolute;
+bottom: 160px;
+display: flex;
+flex-direction: column;
+align-self: center;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.validateandpay {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.general {
+
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px; 
+}
+
+.pay {
+    color: white;
+    background: #c80000;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+
+}
+
+.price {
+
+    font-weight: bold;
+    color: #c80000;
+}
+
+h2 {
+    text-align: left;
+
+    font-weight: bold;
+
+}
+
+.label {
+
+    font-weight: bold;
+    color: rgb(78, 73, 73);
+}
+
+.adressinfos {
+    display: flex;
+    flex-direction: column;
+}
+
+#amount {
+    font-weight: bold;
+}
+
+.continue {
+
+    align-content: center;
+    font-weight: 600;
+    background-color: #b4acac;
+}
